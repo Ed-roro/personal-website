@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Ed-Matic`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
+    description: `Digital creation site for Ed-Matic`,
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
