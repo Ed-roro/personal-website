@@ -25,7 +25,7 @@ const ContactSection = () => (
               maxWidth: 500,
             },
           }}
-          src={`assets/pexels-roman-odintsov-6193626.jpg`}
+          src={`assets/gatsby-astronaut.png`}
         ></img>
       </SectionImageContainer>
     </SectionFlex>
@@ -39,8 +39,8 @@ const ContactSection = () => (
         width: "100%",
         color: "white",
       }}>
-        <h3>Email Us</h3>
-        <h4>software@iteamnm.com</h4>
+        <h3>Email :</h3>
+        <h4>eigharoro@gmail.com</h4>
       </SectionHead>
     </SectionFlex>
   </SectionFlex>
