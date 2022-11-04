@@ -13,6 +13,7 @@ module.exports = {
     description: `Digital creation site for Ed-Matic`,
   },
   plugins: [
+    "gatsby-plugin-root-import",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-emotion",
