@@ -120,7 +120,7 @@ export const CardsSection = () => {
           }}
         >
           <h4 css={{ color: "rgba(0,0,0,0.4)!important" }}>PC Builds</h4>
-          <h3>Gaming & Workstation Systems</h3>
+          <h3>Gaming & Workstations</h3>
           <p css={{ color: "white" }}>
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
             Vivamus magna justo, lacinia eget consectetur sed, convallis at
