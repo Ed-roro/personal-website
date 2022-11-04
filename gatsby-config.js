@@ -1,3 +1,10 @@
+require('ts-node').register({
+  compilerOptions: {
+    module: 'commonjs',
+    target: 'esnext',
+    baseUrl: './src'
+  },
+})
 
 module.exports = {
   siteMetadata: {
@@ -6,6 +13,7 @@ module.exports = {
     description: `Digital creation site for Ed-Matic`,
   },
   plugins: [
+    "gatsby-plugin-root-import",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-emotion",
