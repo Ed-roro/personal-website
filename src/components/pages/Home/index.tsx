@@ -1,0 +1,5 @@
+export * from "./TopSection"
+export * from "./WhatWeDoSection"
+export * from "./CardsSection"
+export * from "./ExamSection"
+export * from "./GetStartedSection"

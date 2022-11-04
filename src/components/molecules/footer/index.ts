@@ -1,0 +1,6 @@
+export { default as Footer } from "./Footer"
+export { default as FooterContainer } from "./FooterContainer"
+export { default as FooterLink } from "./FooterLink"
+export { default as FooterLinkMenu } from "./FooterLinkMenu"
+export { default as FooterCredits } from "./FooterCredits"
+export { default as FooterSocialMenu } from "./FooterSocialMenu"
