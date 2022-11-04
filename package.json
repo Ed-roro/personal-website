@@ -2,7 +2,7 @@
   "name": "ed-matic",
   "version": "1.0.0",
   "private": true,
-  "description": "ed-matic",
+  "description": "ed-matic.com",
   "author": "Ederin (Ediri)",
   "keywords": [
     "gatsby"
@@ -17,19 +17,35 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "dateformat": "^5.0.3",
     "gatsby": "^4.24.6",
+    "gatsby-plugin-emotion": "^7.24.0",
+    "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-netlify": "^5.0.1",
+    "gatsby-plugin-remote-images": "^3.5.0",
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-plugin-sitemap": "^5.24.0",
     "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-transformer-remark": "^5.24.0",
     "gatsby-transformer-sharp": "^4.24.0",
+    "jsx-runtime": "^1.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-jsx": "^1.0.0",
+    "react-player": "^2.11.0",
+    "sharp": "^0.31.2",
     "typescript-react": "^0.2.2"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",
-    "prettier": "2.7.1"
-  }
+    "@types/dateformat": "^5.0.0",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "type-check": "./node_modules/typescript/bin/tsc --noEmit --skipLibCheck"
 }
