@@ -38,6 +38,7 @@
     "react-jsx": "^1.0.0",
     "react-player": "^2.11.0",
     "sharp": "^0.31.2",
+    "ts-node": "^10.9.1",
     "typescript-react": "^0.2.2"
   },
   "devDependencies": {
