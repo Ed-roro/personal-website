@@ -1,8 +1,5 @@
 import Grid from "components/props/Grid"
-import {
-  AboutMySelf,
-  Bio
-} from "components/pages/About"
+import { Me , Myself } from "components/pages/About"
 import DefaultLayout from "Layout/DefaultLayout"
 
 function About() {
@@ -16,8 +13,8 @@ function About() {
           padding: "10px",
         }}
       >
-        <AboutMySelf />
-        <Bio />
+        <Me />
+        <Myself />
       </Grid>
     </DefaultLayout>
   )

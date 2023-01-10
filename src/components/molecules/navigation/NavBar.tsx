@@ -33,7 +33,7 @@ export const Navbar = () => {
       </Bars>
 
       <NavMenu open={open}>
-        <NavLink to="/About" target={""}>
+        <NavLink to="/AboutMe" target={""}>
           About
         </NavLink>
         <NavLink to="/projects" target={""}>
