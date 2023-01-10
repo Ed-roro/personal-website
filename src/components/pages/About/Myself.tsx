@@ -8,7 +8,7 @@ import {
 } from "components/molecules/body"
 import { mq } from "Theme/MediaQueries"
 
-export const Bio = () => (
+export const Myself = () => (
   <SectionGrid
     css={{
       gridRow: 2,
