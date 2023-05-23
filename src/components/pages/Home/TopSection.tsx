@@ -58,7 +58,12 @@ export const TopSection = () => (
   <SectionFlex className='Main' css={MainGrid}>
     {/* Banner*/}
     <SectionContainer className="overlay" css={OverlayCSS}></SectionContainer>
-    <video src={Timelapse} css={TimelapseCSS} autoPlay loop muted />
+    <video
+      controls
+      src={Timelapse}
+      css={TimelapseCSS}
+      autoPlay loop muted
+    />
     <SectionContainer css={TitleCSS}>
       <h1 css={TitleHeaderCSS}> Ed-Matic </h1>
       <SectionP css={{ lineHeight: "1.8em" }}>
