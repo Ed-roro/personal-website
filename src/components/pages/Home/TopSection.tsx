@@ -1,80 +1,74 @@
 import {
-  SectionGrid,
   SectionFlex,
   SectionContainer,
   SectionP
 } from "components/molecules/body"
-import ReactPlayer from "react-player"
+import { Interpolation, Theme } from '@emotion/react'
 import { mq } from "Theme/MediaQueries"
 
-export const TopSection = () => (
-  <SectionGrid
-    css={{
-      gridRow: 1,
-      margin: "auto",
-      alignContent: "space-evenly",
-      alignItems: "center",
-      position: "relative",
-      width: "100vw",
-      [mq.lg]: {
-        maxWidth: 1080,
-      },
-    }}
-  >
-    {/* Banner*/}
-    <SectionFlex
-      css={{
-        alignContent: "flex-end",
-        alignItems: "center",
-        flexDirection: "column",
-        justifyContent: "space-around",
-        justifyItems: "center",
-        flexWrap: "nowrap",
-        overflowWrap: "break-word",
-        [mq.lg]: {
-          gridColumn: "2/ span 1",
-          maxWidth: 1080,
-        },
-      }}
-    >
-      <SectionFlex
-        css={{
-          height: "50vw",
-          flexDirection: "row",
-          justifyContent: "center",
-          background: "#1E1C1C",
-          //flexWrap: "wrap",
-          width: "100vw",
-          padding: 10,
-        }}
-      >
-        {/* Title */}
-        <SectionContainer>
-          <h1
-            css={{
-              fontFamily: "Poppins, Helvetica, Arial, Lucida, sans-serif",
-              fontSize: "32px",
-              overflowWrap: "break-word",
-              color: "white"
-            }}
-          >
-            Ed-Matic
-          </h1>
-          <SectionP css={{ lineHeight: "1.8em" }}>
-            Software Engineer | Indie Developer | Digital Creator
-          </SectionP>
-          <ReactPlayer
-            url='https://www.youtube.com/watch?v=cCA6MMjAib4'
-            speed={1.5}
-            playing={true}
-            muted={true}
-            loop={true}
-            controls={false}
-          />
-        </SectionContainer>
+const MainGrid: Interpolation<Theme> = {
+  gridRow: 1,
+  margin: "auto",
+  alignContent: "space-evenly",
+  alignItems: "center",
+  position: "relative",
+  width: "100vw",
+  height: "100vh", // Set the height of SectionFlex to 100vh
+  [mq.lg]: {
+    //maxWidth: 1080,
+  },
+};
 
-        {/* Banner Buttons */}
-      </SectionFlex>
-    </SectionFlex>
-  </SectionGrid >
+const OverlayCSS: Interpolation<Theme> = {
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  backgroundColor: "rgba(0,0,0,0.6)"
+};
+
+const TimelapseCSS: Interpolation<Theme> = {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+};
+
+const TitleCSS: Interpolation<Theme> = {
+  position: "absolute",
+  width: "100%",
+  height: "100%",
+  top: 0,
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+};
+
+const TitleHeaderCSS: Interpolation<Theme> = {
+  fontFamily: "Poppins, Helvetica, Arial, Lucida, sans-serif",
+  fontSize: "32px",
+  overflowWrap: "break-word",
+  color: "white"
+}
+
+const Timelapse = `assets/ed-matic-com-timelapse-home-page.mp4`;
+
+export const TopSection = () => (
+  <SectionFlex className='Main' css={MainGrid}>
+    {/* Banner*/}
+    <SectionContainer className="overlay" css={OverlayCSS}></SectionContainer>
+    <video
+      controls
+      src={Timelapse}
+      css={TimelapseCSS}
+      autoPlay loop muted
+    />
+    <SectionContainer css={TitleCSS}>
+      <h1 css={TitleHeaderCSS}> Ed-Matic </h1>
+      <SectionP css={{ lineHeight: "1.8em" }}>
+        Software Engineer | Indie Developer | Digital Creator
+      </SectionP>
+    </SectionContainer>
+  </SectionFlex>
 )
