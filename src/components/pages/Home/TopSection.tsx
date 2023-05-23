@@ -4,7 +4,6 @@ import {
   SectionP
 } from "components/molecules/body"
 import { Interpolation, Theme } from '@emotion/react'
-import ReactPlayer from "react-player"
 import { mq } from "Theme/MediaQueries"
 
 const MainGrid: Interpolation<Theme> = {
@@ -20,45 +19,48 @@ const MainGrid: Interpolation<Theme> = {
   },
 };
 
-const playerWrapperStyle: Interpolation<Theme> = {
-  position: "relative",
-  width: "100%",
-  height: "100%",
-};
-
-const playerStyle: React.CSSProperties = {
+const OverlayCSS: Interpolation<Theme> = {
   position: "absolute",
   top: 0,
   left: 0,
-  width: "100vw",
-  height: "100vh",
+  width: "100%",
+  height: "100%",
+  backgroundColor: "rgba(0,0,0,0.6)"
 };
+
+const TimelapseCSS: Interpolation<Theme> = {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+};
+
+const TitleCSS: Interpolation<Theme> = {
+  position: "absolute",
+  width: "100%",
+  height: "100%",
+  top: 0,
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+};
+
+const TitleHeaderCSS: Interpolation<Theme> = {
+  fontFamily: "Poppins, Helvetica, Arial, Lucida, sans-serif",
+  fontSize: "32px",
+  overflowWrap: "break-word",
+  color: "white"
+}
+
+const Timelapse = `assets/ed-matic-com-timelapse-home-page.mp4`;
 
 export const TopSection = () => (
   <SectionFlex className='Main' css={MainGrid}>
     {/* Banner*/}
-    <SectionContainer css={playerWrapperStyle}>
-      <ReactPlayer
-        url='https://www.youtube.com/watch?v=cCA6MMjAib4'
-        speed={1.5}
-        playing={true}
-        muted={true}
-        loop={true}
-        controls={false}
-        style={playerStyle}
-      />
-    </SectionContainer>
-    <SectionContainer>
-      <h1
-        css={{
-          fontFamily: "Poppins, Helvetica, Arial, Lucida, sans-serif",
-          fontSize: "32px",
-          overflowWrap: "break-word",
-          color: "white"
-        }}
-      >
-        Ed-Matic
-      </h1>
+    <SectionContainer className="overlay" css={OverlayCSS}></SectionContainer>
+    <video src={Timelapse} css={TimelapseCSS} autoPlay loop muted />
+    <SectionContainer css={TitleCSS}>
+      <h1 css={TitleHeaderCSS}> Ed-Matic </h1>
       <SectionP css={{ lineHeight: "1.8em" }}>
         Software Engineer | Indie Developer | Digital Creator
       </SectionP>

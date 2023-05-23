@@ -1,5 +1,3 @@
-import Box from "components/props/Box"
-import { CheckMark } from "components/props/CheckMark"
 import {
   SectionFlex,
   SectionContainer,
