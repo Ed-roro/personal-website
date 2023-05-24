@@ -31,7 +31,7 @@ const OverlayCSS: Interpolation<Theme> = {
 const TimelapseCSS: Interpolation<Theme> = {
   width: "100%",
   height: "100%",
-  objectFit: "cover",
+  objectFit: "contain",
 };
 
 const TitleCSS: Interpolation<Theme> = {
