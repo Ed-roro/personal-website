@@ -4,7 +4,6 @@ import {
   SectionP
 } from "components/molecules/body"
 import { Interpolation, Theme } from '@emotion/react'
-import { mq } from "Theme/MediaQueries"
 
 const MainGrid: Interpolation<Theme> = {
   gridRow: 1,
@@ -14,9 +13,6 @@ const MainGrid: Interpolation<Theme> = {
   position: "relative",
   width: "100vw",
   height: "100vh", // Set the height of SectionFlex to 100vh
-  [mq.lg]: {
-    //maxWidth: 1080,
-  },
 };
 
 const OverlayCSS: Interpolation<Theme> = {
