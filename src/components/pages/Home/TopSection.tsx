@@ -63,7 +63,7 @@ export const TopSection = () => (
     <SectionContainer css={TitleCSS}>
       <h1 css={TitleHeaderCSS}> Ed.Roro </h1>
       <SectionP css={{ lineHeight: "1.8em" }}>
-        Software Engineer | Indie Developer | Digital Creator
+        Software Engineer | Indie Developer | Digital Artisit
       </SectionP>
     </SectionContainer>
   </SectionFlex>
