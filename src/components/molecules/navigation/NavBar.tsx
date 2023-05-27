@@ -1,29 +1,16 @@
 import { useState } from "react"
-import { NavContainer, NavLink, NavMenu } from "."
+import { NavContainer, NavFlex, NavLink, NavMenu } from "."
 import { Bars } from './Bars'
-import Flex from "components/props/Flex"
+
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false)
+
   return (
-    <Flex
-      css={{
-        background: "white",
-        alignItems: "center",
-        boxShadow: "0px 0px 20px",
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        gridColumn: "span 4",
-        gridRow: 1,
-        height: "100%",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
+    <NavFlex>
       <NavContainer>
         <NavLink to="/" target={""}>
-          <h1>Home</h1>
+          Home
         </NavLink>
       </NavContainer>
       <Bars onClick={_e => setOpen(prev => !prev)}>
@@ -46,6 +33,6 @@ export const Navbar = () => {
           Contact
         </NavLink>
       </NavMenu>
-    </Flex>
+    </NavFlex>
   )
 }
