@@ -56,7 +56,6 @@ export const CardsSection = () => {
             tellus.
           </p>
           <a
-            className="et_pb_button et_pb_button_2 et_hover_enabled et_pb_bg_layout_light"
             href=""
             data-icon="="
           >
@@ -78,7 +77,6 @@ export const CardsSection = () => {
             tellus.
           </p>
           <a
-            className="et_pb_button et_pb_button_3 et_hover_enabled et_pb_bg_layout_light"
             href=""
             data-icon="="
           >
@@ -103,7 +101,6 @@ export const CardsSection = () => {
             tellus.
           </p>
           <a
-            className="et_pb_button et_pb_button_5 et_hover_enabled et_pb_bg_layout_light"
             href=""
             data-icon="="
           >
@@ -127,7 +124,6 @@ export const CardsSection = () => {
             tellus.
           </p>
           <a
-            className="et_pb_button et_pb_button_4 et_hover_enabled et_pb_bg_layout_light"
             href=""
             data-icon="="
           >

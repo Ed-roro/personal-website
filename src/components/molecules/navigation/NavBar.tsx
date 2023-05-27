@@ -13,6 +13,7 @@ export const Navbar = () => {
           Home
         </NavLink>
       </NavContainer>
+
       <Bars onClick={_e => setOpen(prev => !prev)}>
         <span />
         <span />
