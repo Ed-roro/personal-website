@@ -27,7 +27,7 @@ const OverlayCSS: Interpolation<Theme> = {
 const TimelapseCSS: Interpolation<Theme> = {
   width: "100%",
   height: "100%",
-  objectFit: "contain",
+  objectFit: "cover",
 };
 
 const TitleCSS: Interpolation<Theme> = {
@@ -61,7 +61,7 @@ export const TopSection = () => (
       autoPlay loop muted
     />
     <SectionContainer css={TitleCSS}>
-      <h1 css={TitleHeaderCSS}> Ed-Matic </h1>
+      <h1 css={TitleHeaderCSS}> Ed.Roro </h1>
       <SectionP css={{ lineHeight: "1.8em" }}>
         Software Engineer | Indie Developer | Digital Creator
       </SectionP>
