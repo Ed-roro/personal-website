@@ -35,13 +35,12 @@ export const CardsSection = () => {
           padding: "50px 0",
           [mq.lg]: {
             flexDirection: "row",
-            // maxWidth: "1400px",
           },
         }}
       >
         <SectionContainer
           css={{
-            background: theme.colors.primary,
+            background: "",
             padding: 50,
             boxSizing: "border-box",
           }}

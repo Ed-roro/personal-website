@@ -61,7 +61,7 @@ export const TopSection = () => (
       autoPlay loop muted
     />
     <SectionContainer css={TitleCSS}>
-      <h1 css={TitleHeaderCSS}> Ed.Roro </h1>
+      <h1 css={TitleHeaderCSS}> Ed.roro </h1>
       <SectionP css={{ lineHeight: "1.8em" }}>
         Software Engineer | Indie Developer | Digital Artisit
       </SectionP>
