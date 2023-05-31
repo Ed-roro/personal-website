@@ -40,7 +40,7 @@ export const CardsSection = () => {
       >
         <SectionContainer
           css={{
-            background: "",
+            background: "#3E3746",
             padding: 50,
             boxSizing: "border-box",
           }}
@@ -109,7 +109,7 @@ export const CardsSection = () => {
         <SectionContainer
           css={{
             padding: 50,
-            background: theme.colors.primary,
+            background: "#3E3746",
 
             //background: "teal",
             // boxSizing: "border-box",
