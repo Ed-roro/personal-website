@@ -4,7 +4,7 @@ const SEO = () => {
   return (
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Ed-Matic</title>
+      <title>Ed.roro</title>
     </Helmet>
   )
 }

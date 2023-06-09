@@ -28,7 +28,6 @@ export const CardsSection = () => {
           flexDirection: "column",
           justifyContent: "center",
           flexWrap: "nowrap",
-          gap: 10,
           margin: "auto",
           position: "relative",
           width: "100%",
@@ -54,12 +53,7 @@ export const CardsSection = () => {
             Vivamus magna justo, lacinia eget consectetur sed, convallis at
             tellus.
           </p>
-          <a
-            href=""
-            data-icon="="
-          >
-            View Details {"=>"}
-          </a>
+          <a href="" data-icon="="> View Details {"=>"} </a>
         </SectionContainer>
         <SectionContainer
           css={{

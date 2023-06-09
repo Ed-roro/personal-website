@@ -16,14 +16,3 @@ export const mq = Object.keys(BREAKPOINTS)
     return prev
   }, {} as Record<Mq, string>)
 
-// const Container = styled.div`
-//   ${mq('sm')} {
-//     maxWidth: 750px;
-//   }
-//   ${mq('md')} {
-//     maxWidth: 970px;
-//   }
-//   ${mq('lg')} {
-//     maxWidth: 1170px;
-//   }
-// `
