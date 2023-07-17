@@ -1,6 +1,6 @@
 import { FooterContainer, FooterCredits, FooterSocialMenu } from "."
 import Flex from "components/props/Flex"
-import ContactSection from "components/pages/Contact/ContactSection"
+import ContactSection from "pages/Contact/ContactSection"
 
 const Footer = () => {
   return (

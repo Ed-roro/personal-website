@@ -2,7 +2,7 @@
 import {
   TopSection,
   CardsSection,
-} from "components/pages/Home"
+} from "pages/Home"
 import Grid from "components/props/Grid"
 import DefaultLayout from "Layout/DefaultLayout"
 
