@@ -11,13 +11,12 @@ import { mq } from "Theme/MediaQueries"
 export const ExamSection = () => (
   <SectionGrid
     css={{
-      gridRow: 2,
+      gridRow: 3,
       boxSizing: "border-box",
-      //margin: 10,
       position: "relative",
       width: "100%",
       [mq.lg]: {
-        //maxWidth: 1080,
+        maxWidth: 1080,
       },
     }}
     className=""

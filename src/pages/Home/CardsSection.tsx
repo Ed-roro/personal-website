@@ -14,7 +14,7 @@ const MainGrid: Interpolation<Theme> = {
   [mq.lg]: {
     maxWidth: 1080,
   },
-  gridRow: 3,
+  gridRow: 2,
 }
 
 const BoxContainer: Interpolation<Theme> = {
@@ -70,7 +70,7 @@ export const CardsSection = () => {
         <h4 css={{ color: "rgba(0,0,0,0.4)!important" }}>PC Builds</h4>
 
         <h3>Gaming & Workstations</h3>
-        
+
         <p css={{ color: "white" }}>
           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
           Vivamus magna justo, lacinia eget consectetur sed, convallis at
