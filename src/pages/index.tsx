@@ -20,6 +20,7 @@ function Home() {
       <Grid css={MainGrid}>
         <TopSection />
         <CardsSection />
+        <ExamSection/>
       </Grid>
     </DefaultLayout>
   )

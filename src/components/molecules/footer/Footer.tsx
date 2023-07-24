@@ -29,10 +29,10 @@ const Footer = () => {
         <ContactSection />
         <FooterCredits>
           <p id="footer-info">
-            Designed by &nbsp;
-            Ed-Matic
+            Designed by &nbsp;Ed-Matic
           </p>
           &nbsp;
+          <p> Coded with Gatsby, JavaScript, and TypeScript</p>
         </FooterCredits>
         <FooterSocialMenu />
       </FooterContainer>

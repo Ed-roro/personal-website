@@ -14,17 +14,11 @@ const BodyCSS: Interpolation<ThemeProvider> = {
 }
 
 const GlobalStyles: Interpolation<ThemeProvider> = {
-  body: {
-    margin: 0
-  },
+  body: {margin: 0},
   "*": {
     boxSizing: "border-box",
-    ":before": {
-      boxSizing: "border-box",
-    },
-    ":after": {
-      boxSizing: "border-box",
-    },
+    ":before": { boxSizing: "border-box",},
+    ":after": { boxSizing: "border-box",},
   },
 }
 
@@ -38,7 +32,7 @@ const DefaultLayout = ({ children }: PropsWithChildren<Props>) => (
       <main> {children} </main>
       <Footer />
     </ThemeProvider>
-    </body>
+  </body>
 )
 
 export default DefaultLayout
