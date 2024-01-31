@@ -11,7 +11,7 @@ export const WhatWeDoSection = () => (
   <SectionGrid
     css={{
       gridColumn: "2 / span 2",
-      gridRow: 2,
+      gridRow: 4,
       background:"#28282B",
       margin: "auto",
       //padding: "50px 0",

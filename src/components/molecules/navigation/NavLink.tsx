@@ -15,7 +15,7 @@ interface LinkProps {
 
 export const NavLink = styled(Link)<LinkProps>(
   {
-    color: "black",
+    color: "white",
     textDecoration: "none",
     padding: "1rem 2rem",
     textAlign: "center",

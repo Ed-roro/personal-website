@@ -1,4 +1,4 @@
-import { Global, ThemeProvider } from "@emotion/react"
+import { Global, Interpolation, ThemeProvider } from "@emotion/react"
 import { PropsWithChildren } from "react"
 import { Footer } from "../components/molecules/footer"
 import { Navbar } from "../components/molecules/navigation"
@@ -7,36 +7,32 @@ import DefaultTheme from "../Theme/DefaultTheme"
 
 interface Props { }
 
+const BodyCSS: Interpolation<ThemeProvider> = {
+  background: "#121212",
+  width: "100%",
+  height: "100%"
+}
+
+const GlobalStyles: Interpolation<ThemeProvider> = {
+  body: {margin: 0},
+  "*": {
+    boxSizing: "border-box",
+    ":before": { boxSizing: "border-box",},
+    ":after": { boxSizing: "border-box",},
+  },
+}
+
 const DefaultLayout = ({ children }: PropsWithChildren<Props>) => (
-  <body css={{
-    background: "#121212",
-    width: "100vw"
-  }}> {/* Main Page Backgroung Color */}
-      <ThemeProvider theme={DefaultTheme}>
-      <Global
-        styles={{
-          body: {
-            margin : 0
-          },
-          "*": {
-            boxSizing: "border-box",
-            ":before": {
-              boxSizing: "border-box",
-            },
-            ":after": {
-              boxSizing: "border-box",
-            },
-          },
-        }}
-      />
+  <body css={BodyCSS}>
+    {/* Main Page Backgroung Color */}
+    <ThemeProvider theme={DefaultTheme}>
+      <Global styles={GlobalStyles} />
       <SEO />
       <Navbar />
-      <main>
-        {children}
-      </main>
+      <main> {children} </main>
       <Footer />
-  </ThemeProvider>
-    </body>
+    </ThemeProvider>
+  </body>
 )
 
 export default DefaultLayout

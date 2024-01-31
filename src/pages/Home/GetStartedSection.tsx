@@ -7,7 +7,7 @@ export const GetStartedSection = () => (
       //background:"violet",
       backgroundColor: "#182845!important",
       gridColumn: "span 4",
-      gridRow: 6,
+      gridRow: 4,
     }}
     className="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular"
   >

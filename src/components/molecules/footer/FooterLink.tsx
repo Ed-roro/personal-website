@@ -13,7 +13,7 @@ interface FooterLinkProps {
 
 const FooterLink = styled.a((Props: FooterLinkProps) => ({
   alignItems: Props.alignItems || " center",
-  color: Props.color || "black",
+  color: Props.color || "white",
   cursor: Props.cursor || "pointer",
   display: Props.display || "flex",
   height: Props.height || "100%",

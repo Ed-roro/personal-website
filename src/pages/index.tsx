@@ -2,7 +2,8 @@
 import {
   TopSection,
   CardsSection,
-} from "components/pages/Home"
+  ExamSection,
+} from "pages/Home"
 import Grid from "components/props/Grid"
 import DefaultLayout from "Layout/DefaultLayout"
 
@@ -19,6 +20,7 @@ function Home() {
       <Grid css={MainGrid}>
         <TopSection />
         <CardsSection />
+        <ExamSection/>
       </Grid>
     </DefaultLayout>
   )

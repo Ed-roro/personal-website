@@ -6,22 +6,23 @@ import {
   SectionP,
 } from "components/molecules/body"
 import { mq } from "Theme/MediaQueries"
+import {Interpolation, Theme} from "@emotion/react";
+
+
+const MainGrid: Interpolation<Theme> = {
+    gridRow: 1,
+    background: "#28282B",
+    margin: "auto",
+    position: "relative",
+    width: "90%",
+    height: "100%",
+    [mq.lg]: {
+        maxWidth: 1080,
+    },
+};
 
 export const Me = () => (
-  <SectionGrid
-    css={{
-      gridRow: 1,
-      background: "#28282B",
-      margin: "auto",
-      position: "relative",
-      width: "90%",
-      height: "100%",
-      [mq.lg]: {
-        maxWidth: 1080,
-      },
-    }}
-    display={"grid"}
-  >
+  <SectionGrid css={MainGrid} display={"grid"}>
     <SectionFlex
       css={{
         // alignItems: "center",

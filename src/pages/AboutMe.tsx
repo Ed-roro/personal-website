@@ -1,5 +1,5 @@
 import Grid from "components/props/Grid"
-import { Me , Myself } from "components/pages/About"
+import { Me , Myself } from "pages/About"
 import DefaultLayout from "Layout/DefaultLayout"
 
 function About() {

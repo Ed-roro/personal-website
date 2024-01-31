@@ -1,6 +1,6 @@
 import { FooterContainer, FooterCredits, FooterSocialMenu } from "."
 import Flex from "components/props/Flex"
-import ContactSection from "components/pages/Contact/ContactSection"
+import ContactSection from "pages/Contact/ContactSection"
 
 const Footer = () => {
   return (
@@ -29,10 +29,10 @@ const Footer = () => {
         <ContactSection />
         <FooterCredits>
           <p id="footer-info">
-            Designed by &nbsp;
-            Ed-Matic
+            Designed by &nbsp;Ed-Matic
           </p>
           &nbsp;
+          <p> Coded with Gatsby, JavaScript, and TypeScript</p>
         </FooterCredits>
         <FooterSocialMenu />
       </FooterContainer>

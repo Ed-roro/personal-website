@@ -3,12 +3,18 @@ import { FooterContainer, FooterLink, FooterLinkMenu } from "."
 const FooterSocialMenu = () => (
   <FooterContainer>
     <FooterLinkMenu>
-      <FooterLink css={{ textAlign: "center" }} to={"https://www.facebook.com"}>
+      <FooterLink to={"https://www.facebook.com"}>
         <div>Facebook</div>
       </FooterLink>
-      <FooterLink to={"https://www.twitter.com"}>
-        <div>Twitter</div>
+
+      <FooterLink to={"https://www.instagram.com"}>
+        <div>Instagram</div>
       </FooterLink>
+
+      <FooterLink to={"https://www.linkedin.com"}>
+        <div>Linkedin</div>
+      </FooterLink>
+
     </FooterLinkMenu>
   </FooterContainer>
 )
