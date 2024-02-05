@@ -2,6 +2,7 @@
 import {mq} from "../../Theme/MediaQueries";
 
 export const CardSectionGrid: Interpolation<Theme> = {
+    gridRow: 3,
     background: "#1E1C1C",
     margin: "auto",
     position: "relative",
@@ -9,7 +10,6 @@ export const CardSectionGrid: Interpolation<Theme> = {
     [mq.lg]: {
         maxWidth: 1080,
     },
-    gridRow: 2,
 };
 
 export const BoxContainer: Interpolation<Theme> = {

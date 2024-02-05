@@ -2,7 +2,7 @@ import {
   SectionContainer,
   SectionGrid,
 } from "components/molecules/body"
-import {CardSectionCSS} from '../../Styles/Home'
+import {CardSectionCSS} from '../../styles/Home'
 export const CardsSection = () => {
   return (
     <SectionGrid css={CardSectionCSS.CardSectionGrid} display={"grid"}>

@@ -5,28 +5,39 @@ import {
   SectionP,
   SectionH,
 } from "components/molecules/body"
-import {ThirdSectionCSS} from '../../styles/Home'
+import {QuickBioSectionCSS} from '../../styles/Home'
 import { mq } from "Theme/MediaQueries"
-export const ExamSection = () => (
-  <SectionGrid css={ThirdSectionCSS.MainGridCSS}>
+export const QuickBioSection = () => (
+  <SectionGrid css={QuickBioSectionCSS.MainGridCSS}>
       
       {/* left column */}
-      <SectionImageContainer>
-          <img
-              loading="lazy"
-              src={`assets/turtle-neck_ed.jpg`}
-              alt=""
-              title=""
-              className="wp-image-224474"
-              css={{
-                  maxWidth: "100vw",
-                  height: "auto",
-                  [mq.lg]: {
-                      maxWidth: 500,
-                  },
-              }}
-          />
-      </SectionImageContainer>
+      <SectionContainer>
+          <SectionImageContainer>
+              <img
+                  loading="lazy"
+                  src={`assets/turtle-neck_ed.jpg`}
+                  alt=""
+                  title=""
+                  className="wp-image-224474"
+                  css={{
+                      maxWidth: "100vw",
+                      height: "auto",
+                      [mq.lg]: {
+                          maxWidth: 700,
+                      },
+                  }}
+              />
+          </SectionImageContainer>
+
+          <SectionH>Regular Foot Exams and Checkups</SectionH>
+          <SectionP>
+              Your content goes here. Edit or remove this text inline or in the
+              module Content settings. You can also style every aspect of this
+              content in the module Design settings and even apply custom CSS to
+              this text in the module Advanced settings.
+          </SectionP>
+          
+      </SectionContainer>
 
       {/* right column */}
       <SectionContainer>
@@ -83,12 +94,9 @@ export const ExamSection = () => (
           <SectionImageContainer>
               <img
                   loading="lazy"
-                  // width="70%"
-                  // height="70%"
                   src={`assets/anne-nygard-_W94Eb1iNYc-unsplash.jpg`}
                   alt=""
                   title=""
-                  // sizes="(max-width: 1000px) 100vw, 1000px"
                   className="wp-image-224475"
                   css={{
                       maxWidth: "100vw",
