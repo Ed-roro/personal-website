@@ -3,7 +3,7 @@ import {
   SectionContainer,
   SectionP
 } from "components/molecules/body"
-import {TopSectionCSS} from '../../Styles/Home'
+import {TopSectionCSS} from '../../styles/Home'
 
 const Timelapse = `assets/ed-matic-com-timelapse-home-page.mp4`;
 
