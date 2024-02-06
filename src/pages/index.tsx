@@ -3,6 +3,8 @@ import {
   TopSection,
   CardsSection,
   QuickBioSection,
+    WhatWeDoSection,
+    GetStartedSection,
 } from "pages/Home"
 import Grid from "components/props/Grid"
 import DefaultLayout from "Layout/DefaultLayout"
@@ -21,6 +23,8 @@ function Home() {
         <TopSection />
         <QuickBioSection/>
         <CardsSection />
+        <WhatWeDoSection/>
+        <GetStartedSection/>
       </Grid>
     </DefaultLayout>
   )
