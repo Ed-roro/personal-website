@@ -10,11 +10,9 @@ import { mq } from "Theme/MediaQueries"
 export const WhatWeDoSection = () => (
   <SectionGrid
     css={{
-      gridColumn: "2 / span 2",
       gridRow: 4,
       background:"#28282B",
       margin: "auto",
-      //padding: "50px 0",
       position: "relative",
       width: "90%",
       height:"100%",
@@ -26,12 +24,8 @@ export const WhatWeDoSection = () => (
   >
     <SectionFlex
       css={{
-        // alignItems: "center",
         flexDirection: "column",
-        // justifyContent: "space-around",
-        // justifyItems: "center",
         flexWrap: "nowrap",
-        // padding: 30,
         [mq.lg]: {
           display: "flex",
           flexDirection: "row",
@@ -71,7 +65,7 @@ export const WhatWeDoSection = () => (
         <SectionHead>
           <h4
             css={{
-              fontFamily: "'Poppins',Helvetica,Arial,Lucida,sans-serif",
+              fontFamily: "'Poppins',Helvetica,Arial,Lucid,sans-serif",
               fontWeight: "600",
               textTransform: "uppercase",
               fontSize: "14px",
@@ -80,20 +74,19 @@ export const WhatWeDoSection = () => (
               lineHeight: "1.6em",
             }}
           >
-            Idenityt of Self
+            Identity of Self
           </h4>
         </SectionHead>
 
         <SectionHead>
           <h2
             css={{
-              fontFamily: "'Poppins',Helvetica,Arial,Lucida,sans-serif",
+              fontFamily: "'Poppins',Helvetica,Arial,Lucid,sans-serif",
               fontWeight: "600",
               fontSize: "48px",
               color: "#333",
               letterSpacing: "2px",
               lineHeight: "1.3em",
-              // paddingBottom: "10px",
             }}
           >
             Who Am I?
@@ -106,7 +99,7 @@ export const WhatWeDoSection = () => (
           }}
         >
           I am a Jr. Software Engineer in Albuquerque, New Mexico, USA.
-          Indie (Game, Animation, Website, Video) developer, and a simply lover of life and philosopy
+          Indie (Game, Animation, Website, Video) developer, and a simply lover of life and philosophy
           and free thought. I aspire to create new things and new outlooks.
         </SectionP>
       </SectionContainer>
