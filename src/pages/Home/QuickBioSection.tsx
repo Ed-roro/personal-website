@@ -29,7 +29,7 @@ export const QuickBioSection = () => (
               />
           </SectionImageContainer>
 
-          <SectionH>Regular Foot Exams and Checkups</SectionH>
+          <SectionH>The things I do and my creative work</SectionH>
           <SectionP>
               Your content goes here. Edit or remove this text inline or in the
               module Content settings. You can also style every aspect of this
@@ -59,7 +59,7 @@ export const QuickBioSection = () => (
               />
           </SectionImageContainer>
           <SectionContainer>
-              <SectionH>Regular Foot Exams and Checkups</SectionH>
+              <SectionH>Bringing both Technology & Art together in a independent form</SectionH>
               <SectionP>
                   Your content goes here. Edit or remove this text inline or in the
                   module Content settings. You can also style every aspect of this
