@@ -7,15 +7,12 @@ export const GetStartedSection = () => (
         gridRow: 5,
       backgroundColor: "#182845!important",
       gridColumn: "span 4",
-    }}
-    className="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular"
-  >
+    }}>
     <SectionContainer
       css={{
         width: "100%",
         color: "white",
-      }}
-      className="et_pb_text_inner">
+      }}>
       <h4 css={{ color: "rgba(255,255,255,0.4)!important", }}> Get all the Perks </h4>
       <h2>Subscribe and get videos 2 weeks early!</h2>
       <a
